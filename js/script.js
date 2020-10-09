@@ -18,7 +18,7 @@ function animasiButtonStart(){
 }
 
 function animasiIntroOut(){
-    $("#start").attr("disabled", true).css({"color:black"});
+    $("#start").attr("disabled", true).css({"color":"black"});
     $("#start").velocity("transition.whirlOut",{
                 stagger: 150,
                 complete: function(){
@@ -29,7 +29,7 @@ function animasiIntroOut(){
                                             complete: function(){
                                                 callMenu();
                                                 $("#menu ul li a[href='what_we_do']").trigger("click");
-                                                $("#start").attr("disabled", false).css({"color:black"});
+                                                $("#start").attr("disabled", false).css({"color":"black"});
                                             }
                                         });
                     }
