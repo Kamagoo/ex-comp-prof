@@ -102,3 +102,37 @@ h3.title {
     left: 530px;
     top: 250px;
 }
+
+#our_team {
+    margin-left: 70px;
+}
+
+#our_team .members {
+    float: left;
+    margin: 0px 10px;
+    background: white;
+    padding: 5px 5px 15px 5px;
+    border-radius: 3px;
+}
+
+#our_team .members.top240 {
+    margin-top: 240px;
+}
+#our_team .members.top170 {
+    margin-top: 170px;
+}
+
+#our_team .members img {
+    width: 230px;
+}
+
+#our_team .members h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px 0px 2px 0px;
+}
+
+#our_team .members span {
+    font-size: 12px;
+    font-style: italic;
+}
