@@ -41,19 +41,20 @@ function callMenu(){
                                 stagger: 150
                             });
 
-    $("#menu ul li a").off.click(function(event){
+    $("#menu ul li a").off().click(function(event){
         event.preventDefault();
         $(this).parent("li").addClass("active").siblings().removeClass("active");
+        
 
+        var hrefString = $(this).attr("href");
         if(hrefString == "back_to_intro"){
             back_to_intro();
         }else{
-        var hrefString = $(this).attr("href");
-        if(!$("#" + hrefString).is(":visible")){
-            $(".container-content").fadeOut(1000);
-            setTimeout(function(){
-                 $("#" + hrefString).show();
-                window[hrefString]();
+            if(!$("#" + hrefString).is(":visible")){
+                $(".container-content").fadeOut(1000);
+                setTimeout(function(){
+                     $("#" + hrefString).show();
+                    window[hrefString]();
                 },1000);
             }
         }
