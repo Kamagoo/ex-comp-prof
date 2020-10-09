@@ -27,6 +27,7 @@ function animasiIntroOut(){
                                             duration:1000,
                                             complete: function(){
                                                 callMenu();
+                                                $("#menu ul li a[href='what-we-do']").trigger("click");
                                             }
                                         });
                     }
@@ -37,6 +38,10 @@ function callMenu(){
     $("#menu ul li").velocity("transition.slideLeftIn", {
                                 stagger: 150
                             });
+
+    $("#menu ul li a").click(function(){
+        $(this).parent("li").addClass("active").siblings().removeClass("active");
+    });
 }
 
 $(document).ready(function(){
