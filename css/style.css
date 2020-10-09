@@ -33,4 +33,5 @@ html, body {
     font-weight:bold;
     width: 125px;
     height: 40px;
+    display: none;
 }
